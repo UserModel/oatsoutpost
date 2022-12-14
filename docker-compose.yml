@@ -3,7 +3,8 @@ version: "3"
 services:
   app:
     networks:
-      - beaubox-home_default
+      default:
+      beaubox-home: beaubox-home_default
     build:
       restart: always
       context: ./
