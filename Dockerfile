@@ -1,15 +1,15 @@
-FROM node:16-alpine AS builder
+FROM node:alpine AS builder
 ENV NODE_ENV production
 # Add a work directory
 WORKDIR /
 # Cache and Install dependencies
 COPY package.json .
 COPY yarn.lock .
-RUN npm install
+RUN yarn install
 # Copy app files
 COPY . .
 # Build the app
-RUN npm build
+RUN yarn build
 
 # Bundle static assets with nginx
 FROM nginx:1.21.0-alpine as production
