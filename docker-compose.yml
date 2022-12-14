@@ -4,7 +4,7 @@ services:
   app:
     restart: always
     networks:
-      - beaubox-home_default
+      - nginx-proxy-manager_default
     build:
       context: ./
       dockerfile: Dockerfile
