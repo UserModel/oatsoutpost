@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beau Box</title>
+  </head>
+  <body style="height: 100vh width; width: 100vw; background-color: #221b2f">
+    <div style="height: 100vh" id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        VANTA.HALO({
+          el: "#root",
+          mouseControls: false,
+          touchControls: false,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          baseColor: "#221b2f",
+          backgroundColor: "#221b2f",
+          amplitudeFactor: 0.0,
+          size: 3.0,
+        });
+      });
+    </script>
+  </body>
+</html>
