@@ -3,10 +3,6 @@ name: beaubox-home
 services:
   app:
     restart: always
-    networks:
-      default:
-        external: true
-        name: nginx-proxy-manager
     build:
       context: ./
       dockerfile: Dockerfile
@@ -15,3 +11,8 @@ services:
         GROUPID: 0
     ports:
       - '3000:3000'
+
+networks:
+  default:
+    name: nginx-proxy-manager_default
+    external: true
