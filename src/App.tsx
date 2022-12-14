@@ -49,6 +49,12 @@ function App() {
                 >
                   Portainer
                 </Button>
+                <Button
+                  onClick={() => window.open("https://portainer.beaubox.cloud")}
+                  colorScheme="gray"
+                >
+                  Proxy
+                </Button>
               </Wrap>
             </Center>
           </CardBody>
