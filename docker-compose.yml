@@ -5,6 +5,7 @@ services:
     restart: always
     build:
       context: ./
+      target: production
       dockerfile: Dockerfile
       args:
         USERID: 0
