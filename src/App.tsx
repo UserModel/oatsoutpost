@@ -10,7 +10,6 @@ import {
   Image,
   Wrap,
 } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
 
 function App() {
   return (
