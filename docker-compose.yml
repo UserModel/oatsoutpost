@@ -3,6 +3,7 @@ services:
   app:
     container_name: beaubox-home
     restart: always
+    pull_policy: build
     build:
       context: ./
       target: production
