@@ -4,7 +4,7 @@ services:
   app:
     networks:
       default:
-      beaubox-home: beaubox-home_default
+        beaubox-home: beaubox-home_default
     build:
       restart: always
       context: ./
