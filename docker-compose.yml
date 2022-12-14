@@ -4,8 +4,7 @@ services:
     container_name: beaubox-home
     restart: always
     build:
-      context: .
-      target: production
+      context: ./
       dockerfile: Dockerfile
       args:
         USERID: 0
