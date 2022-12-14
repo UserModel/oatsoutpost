@@ -6,13 +6,6 @@ services:
     build:
       context: .
       target: production
-      dockerfile: Dockerfile
-      args:
-        USERID: 0
-        GROUPID: 0
-    ports:
-      - '3000:3000'
-
 networks:
   default:
     name: nginx-proxy-manager_default
