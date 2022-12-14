@@ -5,8 +5,8 @@ services:
     restart: always
     networks:
       default:
-      external: true
-      name: nginx-proxy-manager
+        external: true
+        name: nginx-proxy-manager
     build:
       context: ./
       dockerfile: Dockerfile
