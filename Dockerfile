@@ -1,4 +1,4 @@
-FROM node:latest AS builder
+FROM node:16-alpine AS builder
 ENV NODE_ENV production
 # Add a work directory
 WORKDIR /
@@ -12,7 +12,7 @@ COPY . .
 RUN yarn build
 
 # Bundle static assets with nginx
-FROM nginx:latest as production
+FROM nginx:1.21.0-alpine as production
 ENV NODE_ENV production
 # Copy built assets from builder
 COPY --from=builder /dist /usr/share/nginx/html
