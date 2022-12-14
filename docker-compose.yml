@@ -4,7 +4,9 @@ services:
   app:
     restart: always
     networks:
-      - nginx-proxy-manager_default
+      default:
+      external: true
+      name: nginx-proxy-manager
     build:
       context: ./
       dockerfile: Dockerfile
