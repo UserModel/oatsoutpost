@@ -11,18 +11,21 @@
     <div style="height: 100vh" id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      VANTA.HALO({
-        el: "#root",
-        mouseControls: false,
-        touchControls: false,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        baseColor: "#221b2f",
-        backgroundColor: "#221b2f",
-        amplitudeFactor: 0.0,
-        size: 3.0,
-      });
+      function doSodocumentReadymething() {
+        VANTA.HALO({
+          el: "#root",
+          mouseControls: false,
+          touchControls: false,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          baseColor: "#221b2f",
+          backgroundColor: "#221b2f",
+          amplitudeFactor: 0.0,
+          size: 3.0,
+        });
+      }
+      document.addEventListener("DOMContentLoaded", documentReady, false);
     </script>
   </body>
 </html>
