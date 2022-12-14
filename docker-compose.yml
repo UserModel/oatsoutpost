@@ -1,9 +1,9 @@
 version: "3"
-
+name: beaubox-home
 services:
   app:
     networks:
-      default: beaubox-home_default
+      - beaubox-home_default
     build:
       restart: always
       context: ./
