@@ -5,15 +5,13 @@ services:
     restart: always
     pull_policy: build
     build:
-      context: ./
-      target: production
+      context: .
       dockerfile: Dockerfile
       args:
         USERID: 0
         GROUPID: 0
     ports:
       - '3000:3000'
-
 networks:
   default:
     name: nginx-proxy-manager_default
