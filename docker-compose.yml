@@ -6,6 +6,7 @@ services:
     build:
       context: .
       target: production
+      dockerfile: Dockerfile
       args:
         USERID: 0
         GROUPID: 0
