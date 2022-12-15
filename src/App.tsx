@@ -1,57 +1,62 @@
 import {
   Button,
-  ButtonGroup,
   Card,
   CardBody,
   Center,
   Container,
-  Heading,
-  HStack,
+  Divider,
   Image,
   Wrap,
 } from "@chakra-ui/react";
+
+import {
+  BsTvFill,
+  BsHddFill,
+  BsGlobe,
+  BsCloudArrowDownFill,
+} from "react-icons/bs";
 
 function App() {
   return (
     <Center height="90vh">
       <Container>
-        <HStack>
-          <Image height="10em" src="/logo.png" />
-          <Heading alignSelf="flex-end" color="white">
-            Beau Box
-          </Heading>
-        </HStack>
-        <Card variant="umstyled">
+        <Center>
+          <Image width="30em" src="/logo.png" />
+        </Center>
+        <br />
+        <Card variant="unstyled">
           <CardBody>
             <Center>
               <Wrap>
                 <Button
-                  onClick={() => window.open("https://media.beaubox.cloud")}
+                  leftIcon={<BsTvFill />}
+                  width="100%"
+                  onClick={() => window.open("https://stream.beaubox.cloud")}
                   colorScheme="purple"
                 >
-                  Media
+                  Stream
                 </Button>
                 <Button
+                  leftIcon={<BsCloudArrowDownFill />}
+                  width="100%"
                   onClick={() => window.open("https://downloads.beaubox.cloud")}
                   colorScheme="pink"
                 >
                   Downloads
                 </Button>
                 <Button
-                  onClick={() => window.open("https://tnas.beaubox.cloud")}
-                  colorScheme="cyan"
-                >
-                  TNAS
-                </Button>
-                <Button
+                  leftIcon={<BsHddFill />}
+                  width="100%"
                   onClick={() => window.open("https://portainer.beaubox.cloud")}
                   colorScheme="yellow"
                 >
-                  Portainer
+                  Manage
                 </Button>
                 <Button
+                  leftIcon={<BsGlobe />}
+                  width="100%"
                   onClick={() => window.open("https://proxy.beaubox.cloud")}
-                  colorScheme="gray"
+                  colorScheme="cyan"
                 >
                   Proxy
                 </Button>
