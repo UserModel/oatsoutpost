@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   app:
-    container_name: beaubox-home
+    container_name: oatsoutpost-home
     restart: always
     pull_policy: build
     build:
