@@ -47,7 +47,7 @@ function App() {
                 <Button
                   leftIcon={<BsHddFill />}
                   width="100%"
-                  onClick={() => window.open("https://portainer.beaubox.cloud")}
+                  onClick={() => window.open("https://manage.beaubox.cloud")}
                   colorScheme="yellow"
                 >
                   Manage
