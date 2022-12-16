@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oat's Outpost</title>
   </head>
@@ -11,17 +11,18 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script defer>
-      VANTA.HALO({
-        el: "body",
+      VANTA.CLOUDS2({
+        el: "#your-element-selector",
         mouseControls: true,
         touchControls: true,
-        gyroControls: true,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        baseColor: "#221b2f",
-        backgroundColor: "#221b2f",
-        amplitudeFactor: 0.0,
-        size: 3.0,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        skyColor: 0x1e0f52,
+        cloudColor: 0x87e6,
+        lightColor: 0xac25ac,
+        texturePath: "./gallery/noise.png"
       });
     </script>
   </body>
