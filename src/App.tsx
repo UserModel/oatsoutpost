@@ -21,7 +21,7 @@ function App() {
     <Center height="90vh">
       <Container>
         <Center>
-          <Image width="30em" src="/logo.png" />
+          <Image sx={{transform: 'scaleX(-1)'}} width="30em" src="/logo.png" />
         </Center>
         <br />
         <Card variant="unstyled">
