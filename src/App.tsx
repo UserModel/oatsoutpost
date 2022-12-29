@@ -31,7 +31,7 @@ function App() {
                 <Button
                   leftIcon={<BsTvFill />}
                   width="100%"
-                  onClick={() => window.open("https://stream.oatsoutpost.com")}
+                  onClick={() => window.open("http://stream.oatsoutpost.com")}
                   colorScheme="purple"
                 >
                   Stream
@@ -39,7 +39,7 @@ function App() {
                 <Button
                   leftIcon={<BsCloudArrowDownFill />}
                   width="100%"
-                  onClick={() => window.open("https://downloads.oatsoutpost.com")}
+                  onClick={() => window.open("http://downloads.oatsoutpost.com")}
                   colorScheme="pink"
                 >
                   Downloads
@@ -47,7 +47,7 @@ function App() {
                 <Button
                   leftIcon={<BsHddFill />}
                   width="100%"
-                  onClick={() => window.open("https://manage.oatsoutpost.com")}
+                  onClick={() => window.open("http://manage.oatsoutpost.com")}
                   colorScheme="yellow"
                 >
                   Manage
@@ -55,7 +55,7 @@ function App() {
                 <Button
                   leftIcon={<BsGlobe />}
                   width="100%"
-                  onClick={() => window.open("https://proxy.oatsoutpost.com")}
+                  onClick={() => window.open("http://proxy.oatsoutpost.com")}
                   colorScheme="cyan"
                 >
                   Proxy
